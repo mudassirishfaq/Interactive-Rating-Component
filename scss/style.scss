@@ -1,0 +1,164 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+/*Reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: all .3s linear;
+    font-family: "Overpass", sans-serif;
+
+}
+
+/*Colors scheme*/
+
+$white:hsl(0, 0%, 100%);
+$lightgrey:hsl(217, 12%, 63%);
+$mediumgrey:hsl(216, 12%, 54%);
+$darkblue:hsl(213, 19%, 18%);
+$darkbluesec:hsl(216, 12%, 8%);
+$orange:hsl(25, 97%, 53%);
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $darkbluesec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.submit_btn {
+    background: $orange;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: .7rem 1.8rem;
+    color: $white;
+    font-size: 1.6rem;
+
+    font-weight: 400;
+    border-radius: .625rem;
+   width: 100%;
+   cursor: pointer;
+
+  
+
+}
+.hidden {
+    display: none!important;
+}
+.wrapper {
+    margin: 1.5rem;
+    .reaction__box {
+        background: linear-gradient(to right, $darkblue ,$darkbluesec);
+        padding: 15px;
+        max-width: 400px;
+        border-radius: 0.625rem;
+        box-shadow: 0 1.5rem 2.5rem rgba(0,0,0,0.8);
+        img {
+            background: hsl(215, 9%, 54%);
+            border-radius: 50%;
+            padding: 10px;
+            margin-block:10px;
+        }
+        .title {
+            color: $white;
+            font-size: 2rem;
+            margin-block: 1.2rem;
+        }
+        p {
+            font-size: 15px;
+            color: $lightgrey;
+            margin-block: .6rem;
+        }
+      ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            button {
+                padding: 5px;
+                border-radius: 50%;
+                color:$orange;
+                font-size: 1.3rem;
+                margin-inline: 1rem;
+                width: 3rem;
+                height: 3rem;
+                font-weight: 700;
+                margin-block: 2rem;
+                cursor: pointer;
+                &:hover{
+                    color: $white;
+                    background: $orange;
+                }
+                &:focus {
+                    background: $lightgrey;
+                    color: $white;
+                }
+            }
+        }
+     
+        
+    }
+    .thank__box {
+        background: linear-gradient(to right, $darkblue ,$darkbluesec);
+        padding: 15px;
+        max-width: 400px;
+        border-radius: 0.625rem;
+        box-shadow: 0 1.5rem 2.5rem rgba(0,0,0,0.8);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+       
+    }
+    .highlight{
+        background: $lightgrey;
+       margin-top: 15px;
+       padding: .5rem 1.3rem;
+       color: #121212;
+       opacity: .7;
+       font-weight: 700;
+       font-size: 1.5rem;
+        border-radius: 30px;
+        max-width: max-content;
+        text-align: center;
+        width: 100%;
+}
+.title {
+    font-size: 2rem;
+    color: $white;
+    text-transform: capitalize;
+    margin-top: 1.3rem;
+    margin-bottom: .3rem;
+}
+.desc {
+    color: $lightgrey;
+    font-size: 1.5rem;
+    margin-block: 1.3rem;
+}
+
+}
+.attribution { font-size: 1.5rem; text-align: center;
+color: $mediumgrey; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media screen and (max-width:500px) {
+    html {
+        font-size: 50%;
+    }
+}

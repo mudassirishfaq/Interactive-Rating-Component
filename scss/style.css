@@ -1,0 +1,156 @@
+/*Google Font*/
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  transition: all 0.3s linear;
+  font-family: "Overpass", sans-serif;
+}
+
+/*Colors scheme*/
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: hsl(216deg, 12%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.submit_btn {
+  background: hsl(25deg, 97%, 53%);
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 0.7rem 1.8rem;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-radius: 0.625rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.wrapper {
+  margin: 1.5rem;
+}
+.wrapper .reaction__box {
+  background: linear-gradient(to right, hsl(213deg, 19%, 18%), hsl(216deg, 12%, 8%));
+  padding: 15px;
+  max-width: 400px;
+  border-radius: 0.625rem;
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.8);
+}
+.wrapper .reaction__box img {
+  background: hsl(215deg, 9%, 54%);
+  border-radius: 50%;
+  padding: 10px;
+  margin-block: 10px;
+}
+.wrapper .reaction__box .title {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  margin-block: 1.2rem;
+}
+.wrapper .reaction__box p {
+  font-size: 15px;
+  color: hsl(217deg, 12%, 63%);
+  margin-block: 0.6rem;
+}
+.wrapper .reaction__box ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wrapper .reaction__box ul button {
+  padding: 5px;
+  border-radius: 50%;
+  color: hsl(25deg, 97%, 53%);
+  font-size: 1.3rem;
+  margin-inline: 1rem;
+  width: 3rem;
+  height: 3rem;
+  font-weight: 700;
+  margin-block: 2rem;
+  cursor: pointer;
+}
+.wrapper .reaction__box ul button:hover {
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(25deg, 97%, 53%);
+}
+.wrapper .reaction__box ul button:focus {
+  background: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}
+.wrapper .thank__box {
+  background: linear-gradient(to right, hsl(213deg, 19%, 18%), hsl(216deg, 12%, 8%));
+  padding: 15px;
+  max-width: 400px;
+  border-radius: 0.625rem;
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.8);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wrapper .highlight {
+  background: hsl(217deg, 12%, 63%);
+  margin-top: 15px;
+  padding: 0.5rem 1.3rem;
+  color: #121212;
+  opacity: 0.7;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  text-align: center;
+  width: 100%;
+}
+.wrapper .title {
+  font-size: 2rem;
+  color: hsl(0deg, 0%, 100%);
+  text-transform: capitalize;
+  margin-top: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+.wrapper .desc {
+  color: hsl(217deg, 12%, 63%);
+  font-size: 1.5rem;
+  margin-block: 1.3rem;
+}
+
+.attribution {
+  font-size: 1.5rem;
+  text-align: center;
+  color: hsl(216deg, 12%, 54%);
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
